@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pancakeView="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="AppSirius.Home"
+             BackgroundColor="#292d32"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+
+                <!-- Title Text -->
+                <StackLayout VerticalOptions="Start">
+
+                    <StackLayout>
+
+                        <pancakeView:PancakeView Margin="30,100,30,30"
+                                                 VerticalOptions="FillAndExpand"
+                                                 BackgroundColor="Transparent"
+                                                 HeightRequest="105" Padding="0"
+                                                 HorizontalOptions="FillAndExpand">
+                            
+                            <StackLayout HorizontalOptions="CenterAndExpand"
+                                         VerticalOptions="CenterAndExpand">
+
+                                <Label
+                                   HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"
+                                   Text="X Days"
+                                   TextColor="White"
+                                   FontSize="48"
+                                   FontAttributes="Bold"/>
+
+                                <Label
+                                   HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"
+                                   Text="Since Last Seizure"
+                                   TextColor="White"
+                                   FontSize="22"
+                                   FontAttributes="Bold"/>
+                            </StackLayout>
+                            
+                        </pancakeView:PancakeView>
+                        
+                    </StackLayout>
+                    
+                </StackLayout>
+
+                <!-- Button -->
+                <Frame HorizontalOptions="CenterAndExpand" HeightRequest="230"
+                             VerticalOptions="StartAndExpand" BackgroundColor="Transparent">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <Image Source="sendButton.png" Aspect="AspectFit"
+                           Margin="15"/>
+
+                </Frame>
+                
+                <!-- SubText -->
+                <StackLayout VerticalOptions="StartAndExpand" Margin="0,-200,0,0">
+                    
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        Text="Press the button to register"
+                        TextColor="White"
+                        FontSize="18"
+                        FontAttributes="Bold"/>
+                    
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        Text="the date and time of the seizure"
+                        TextColor="White"
+                        FontSize="18"
+                        FontAttributes="Bold"/>
+                    
+                </StackLayout>
+
+            </StackLayout>
+                
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

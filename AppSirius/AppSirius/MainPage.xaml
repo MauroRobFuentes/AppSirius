@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSirius.MainPage"
+            xmlns:local="clr-namespace:AppSirius"
+            NavigationPage.HasNavigationBar="false"
+            BarBackground="#292d32"
+            SelectedTabColor="Green"
+            UnselectedTabColor="White"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom">
+
+    <local:Home/>
+    <local:Alarms IconImageSource="alarm.png"/>
+    <local:Journal Title="Journal" IconImageSource="journal.png"/>
+    <local:Options Title="Options" IconImageSource="settings.png"/>
+
+</TabbedPage>
