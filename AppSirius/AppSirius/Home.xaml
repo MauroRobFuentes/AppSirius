@@ -14,7 +14,7 @@
 
                     <StackLayout>
 
-                        <pancakeView:PancakeView Margin="30,100,30,30"
+                        <pancakeView:PancakeView Margin="30,100,30,20"
                                                  VerticalOptions="FillAndExpand"
                                                  BackgroundColor="Transparent"
                                                  HeightRequest="105" Padding="0"
@@ -26,18 +26,21 @@
                                 <Label
                                    HorizontalTextAlignment="Center"
                                    VerticalTextAlignment="Center"
-                                   Text="X Days"
+                                   Text="X DAYS"
                                    TextColor="White"
                                    FontSize="48"
-                                   FontAttributes="Bold"/>
+                                   FontAttributes="Bold"
+                                   FontFamily="bnt"/>
 
                                 <Label
+                                   Margin="0,-15,0,0"
                                    HorizontalTextAlignment="Center"
                                    VerticalTextAlignment="Center"
-                                   Text="Since Last Seizure"
+                                   Text="SINCE LAST SEIZURE"
                                    TextColor="White"
                                    FontSize="22"
-                                   FontAttributes="Bold"/>
+                                   FontAttributes="Bold"
+                                   FontFamily="bnt"/>
                             </StackLayout>
                             
                         </pancakeView:PancakeView>

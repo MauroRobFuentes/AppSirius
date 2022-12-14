@@ -2,6 +2,8 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("BigNoodleTitling.ttf", Alias = "bnt")]
+
 namespace AppSirius
 {
     public partial class App : Application

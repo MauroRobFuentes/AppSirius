@@ -10,8 +10,8 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom">
 
-    <local:Home/>
-    <local:Alarms IconImageSource="alarm.png"/>
+    <local:Home Title="Home" IconImageSource="home.png"/>
+    <local:Alarms Title="Alarms" IconImageSource="alarm.png"/>
     <local:Journal Title="Journal" IconImageSource="journal.png"/>
     <local:Options Title="Options" IconImageSource="settings.png"/>
 
